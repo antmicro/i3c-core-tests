@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href='main.css'>
+    <link rel='stylesheet' type='text/css' href='cov.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testplan simulation results</title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <nav class="navbar">
+                <div class="nav-left">
+                    
+                    <div class="nav-urls">
+                        <a href="./index-blocks.html" class="button tooltip">
+                            <img src="assets/caret.svg" alt="Back" style="transform: scale(-2) translatey(-1px);" />
+                            <span class="tooltip-text tooltip-text-right">Go Back</span>
+                        </a>
+                    </div>
+                    
+
+                    <span class="container-title">
+                        hci_queues
+                    </span>
+
+                    
+
+                    
+                    <div class="nav-urls">
+                        <a href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/testplan/block/hci_queues.hjson" class="button tooltip">
+                            <img src="assets/code.svg" alt="Source" style="transform: scale(1.25) translatey(1px);"/>
+                            <span class="tooltip-text tooltip-text-right">Go to testplan source</span>
+                        </a>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="nav-right">
+                    
+                    <div class="nav-item">
+                        <img src="./assets/date.svg" alt="Run on"/>
+                        28/04/2026 08:50
+                    </div>
+                    
+                    
+                    <div class="nav-item">
+                        <img src="./assets/repo.svg" alt="Run on"/>
+                        <a target="_blank" href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy">ci</a>
+                    </div>
+                    
+                    
+                    <div class="nav-item">
+                        <img src="./assets/branch.svg" alt="Run on"/>
+                        <a target="_blank" href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/tree/origin/v1p5-msft">origin/v1p5-msft</a>
+                    </div>
+                    
+                    
+                    <div class="nav-item">
+                        <img src="./assets/commit.svg" alt="Run on"/>
+                        <a target="_blank" href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/commit/81967958">81967958</a>
+                    </div>
+                    
+                </div>
+                
+            </nav>
+        </header>
+        <center class='results'>
+        <div class="page-wrapper">
+            <div class="test-results">
+                <div class="table-wrapper">
+                    
+<h3> Test Results
+ </h3><table>
+<thead>
+<tr><th style="text-align: center;"> Name </th><th>Tests                                                                                                                                                                         </th><th style="text-align: center;"> Max Job Runtime </th><th style="text-align: center;"> Simulated Time </th><th style="text-align: center;"> Passing </th><th style="text-align: center;"> Total </th><th style="text-align: center;">               Pass Rate                </th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: center;">   <span title='Writes to the HCI queue RESET_CONTROL CSR bit which causes HCI
+command response queue to be cleared. Then, polls the CSR until the
+bit gets cleared by the hardware. To check if the queue has been
+cleared puts a descriptor to the queue and reads it back. It
+should be the same descriptor.'>clear_on_nonempty_resp_queue<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_clear.py#L13>clear_on_nonempty_resp_queue</a>    </td><td style="text-align: center;">       0.2       </td><td style="text-align: center;">     88.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Puts a command descriptor to the HCI command queue. Writes to the
+RESET_CONTROL CSR to the bit responsible for clearing the queue,
+polls the CSR until the bit gets cleared by hardware. Verifies that
+the queue got cleared by pushing and retrieving another descriptor
+from the queue.'>clear_on_nonempty_cmd_queue<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_clear.py#L41>clear_on_nonempty_cmd_queue</a>     </td><td style="text-align: center;">      0.128      </td><td style="text-align: center;">    300.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Puts 10 data words to the HCI RX data queue. Writes to the
+RESET_CONTROL CSR to the bit responsible for clearing the queue,
+polls the CSR until the bit gets cleared by hardware. Puts and
+gets another data word from the queue to check if it was cleared.'>clear_on_nonempty_rx_queue<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_clear.py#L68>clear_on_nonempty_rx_queue</a>      </td><td style="text-align: center;">      0.038      </td><td style="text-align: center;">     88.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Puts 10 data words to the HCI TX data queue. Writes to the
+RESET_CONTROL CSR to the bit responsible for clearing the queue,
+polls the CSR until the bit gets cleared by hardware. Puts and
+gets another data word from the queue to check if it was cleared.'>clear_on_nonempty_tx_queue<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_clear.py#L93>clear_on_nonempty_tx_queue</a>      </td><td style="text-align: center;">      0.078      </td><td style="text-align: center;">    190.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Puts 10 data words to the HCI IBI queue. Writes to the
+RESET_CONTROL CSR to the bit responsible for clearing the queue,
+polls the CSR until the bit gets cleared by hardware. Puts and
+gets another data word from the queue to check if it was cleared.'>clear_on_nonempty_ibi_queue<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_clear.py#L118>clear_on_nonempty_ibi_queue</a>    </td><td style="text-align: center;">      0.038      </td><td style="text-align: center;">     88.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Resets the HCI command queue and verifies that it is empty
+afterwards.'>cmd_capacity_status<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_empty.py#L22>cmd_capacity_status</a>             </td><td style="text-align: center;">      0.18       </td><td style="text-align: center;">     42.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Resets the HCI response queue and verifies that it is empty
+afterwards.'>resp_capacity_status<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_empty.py#L32>resp_capacity_status</a>            </td><td style="text-align: center;">      0.018      </td><td style="text-align: center;">     42.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Resets the HCI RX queue and verifies that it is empty
+afterwards.'>rx_capacity_status<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_empty.py#L27>rx_capacity_status</a>              </td><td style="text-align: center;">      0.018      </td><td style="text-align: center;">     42.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Resets the HCI TX queue and verifies that it is empty
+afterwards.'>tx_capacity_status<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_empty.py#L37>tx_capacity_status</a>              </td><td style="text-align: center;">      0.017      </td><td style="text-align: center;">     42.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Resets the HCI IBI queue and verifies that it is empty
+afterwards.'>ibi_capacity_status<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_empty.py#L42>ibi_capacity_status</a>             </td><td style="text-align: center;">      0.017      </td><td style="text-align: center;">     42.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Writes the threshold to appropriate register for the HCI command
+queue (QUEUE_THLD_CTRL or DATA_BUFFER_THLD_CTRL).
+Verifies that an appropriate value has been written to the CSR.
+Verifies the threshold signal assumes the correct value.'>cmd_setup_threshold<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_threshold.py#L419>cmd_setup_threshold</a>        </td><td style="text-align: center;">      0.19       </td><td style="text-align: center;">     82.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Writes the threshold to appropriate register for the HCI response
+queue (QUEUE_THLD_CTRL or DATA_BUFFER_THLD_CTRL).
+Verifies that an appropriate value has been written to the CSR.
+Verifies the threshold signal assumes the correct value.'>resp_setup_threshold<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_threshold.py#L439>resp_setup_threshold</a>       </td><td style="text-align: center;">      0.03       </td><td style="text-align: center;">     88.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Writes the threshold to appropriate register for the HCI data RX
+queue (QUEUE_THLD_CTRL or DATA_BUFFER_THLD_CTRL).
+Verifies that an appropriate value has been written to the CSR.
+Verifies the threshold signal assumes the correct value.'>rx_setup_threshold<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_threshold.py#L425>rx_setup_threshold</a>         </td><td style="text-align: center;">      0.037      </td><td style="text-align: center;">    110.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Writes the threshold to appropriate register for the HCI data TX
+queue (QUEUE_THLD_CTRL or DATA_BUFFER_THLD_CTRL).
+Verifies that an appropriate value has been written to the CSR.
+Verifies the threshold signal assumes the correct value.'>tx_setup_threshold<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_threshold.py#L432>tx_setup_threshold</a>         </td><td style="text-align: center;">      0.034      </td><td style="text-align: center;">    110.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Writes the threshold to appropriate register for the HCI IBI
+queue (QUEUE_THLD_CTRL or DATA_BUFFER_THLD_CTRL).
+Verifies that an appropriate value has been written to the CSR.
+Verifies the threshold signal assumes the correct value.'>ibi_setup_threshold<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_threshold.py#L445>ibi_setup_threshold</a>        </td><td style="text-align: center;">      0.03       </td><td style="text-align: center;">     76.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Sets up a ready threshold of the read queue and checks whether the
+trigger signal is properly asserted at different levels of the
+queue fill.'>resp_should_raise_thld_trig<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_threshold.py#L598>resp_should_raise_thld_trig</a></td><td style="text-align: center;">      0.042      </td><td style="text-align: center;">    146.501     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Sets up a ready and start thresholds of the read queue and checks
+whether the trigger signals are properly asserted at different
+levels of the queue fill.'>rx_should_raise_thld_trig<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_threshold.py#L604>rx_should_raise_thld_trig</a>  </td><td style="text-align: center;">      0.201      </td><td style="text-align: center;">    718.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Sets up a ready threshold of the read queue and checks whether the
+trigger signal is properly asserted at different levels of the
+queue fill.'>ibi_should_raise_thld_trig<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_threshold.py#L611>ibi_should_raise_thld_trig</a> </td><td style="text-align: center;">      0.039      </td><td style="text-align: center;">    134.501     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Sets up a ready threshold of the write queue and checks whether
+the trigger is properly asserted at different levels of the queue
+fill.'>cmd_should_raise_thld_trig<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_threshold.py#L747>cmd_should_raise_thld_trig</a> </td><td style="text-align: center;">      0.352      </td><td style="text-align: center;">     1055.5     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title='Sets up a ready and start threshold of the write queue and checks
+whether the trigger is properly asserted at different levels of
+the queue fill.'>tx_should_raise_thld_trig<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/lib_hci_queues/test_threshold.py#L753>tx_should_raise_thld_trig</a>  </td><td style="text-align: center;">      0.254      </td><td style="text-align: center;">    840.001     </td><td style="text-align: center;">    4    </td><td style="text-align: center;">   4   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">      </td><td><b>TOTAL</b>                                                                                                                                                                  </td><td style="text-align: center;">                 </td><td style="text-align: center;">                </td><td style="text-align: center;">   80    </td><td style="text-align: center;">  80   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+</tbody>
+</table>
+
+                </div>
+            </div>
+            <div class="progress-table">
+                <div class="table-wrapper">
+                    
+<h3> Testplan Progress
+ </h3><table>
+<thead>
+<tr><th style="text-align: center;"> Implemented tests </th><th style="text-align: center;"> Planned tests </th><th style="text-align: center;">        Implementation progress         </th><th style="text-align: center;"> Passing runs </th><th style="text-align: center;"> Total runs </th><th style="text-align: center;">               Pass rate                </th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align: center;">        20         </td><td style="text-align: center;">      20       </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td><td style="text-align: center;">      80      </td><td style="text-align: center;">     80     </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+</tbody>
+</table>
+
+                </div>
+            </div>
+        </div>
+        </center>
+    </div>
+    <footer>
+    </footer>
+</body>
+
+<script>
+const header = document.querySelector('header');
+const colHeaders = document.querySelectorAll("th");
+const tableWrapper = document.querySelector('.table-wrapper');
+
+function updateOffsets() {
+    const headerHeight = header.offsetHeight + "px";
+    tableWrapper.style.marginTop = headerHeight;
+    colHeaders.forEach((col) => {
+        col.style.top = headerHeight;
+    })
+}
+
+window.addEventListener('resize', updateOffsets, {passive: true});
+window.addEventListener('load', updateOffsets, {passive: true});
+</script>
+
+</html>
