@@ -29,7 +29,7 @@
 
                     
                     <div class="nav-urls">
-                        <a href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/testplan/top/target_bus_stall.hjson" class="button tooltip">
+                        <a href="https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/testplan/top/target_bus_stall.hjson" class="button tooltip">
                             <img src="assets/code.svg" alt="Source" style="transform: scale(1.25) translatey(1px);"/>
                             <span class="tooltip-text tooltip-text-right">Go to testplan source</span>
                         </a>
@@ -42,25 +42,25 @@
                     
                     <div class="nav-item">
                         <img src="./assets/date.svg" alt="Run on"/>
-                        28/04/2026 08:50
+                        30/04/2026 16:21
                     </div>
                     
                     
                     <div class="nav-item">
                         <img src="./assets/repo.svg" alt="Run on"/>
-                        <a target="_blank" href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy">ci</a>
+                        <a target="_blank" href="https://github.com/antmicro/i3c-core">microsoft-i3c-core-rtl</a>
                     </div>
                     
                     
                     <div class="nav-item">
                         <img src="./assets/branch.svg" alt="Run on"/>
-                        <a target="_blank" href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/tree/origin/v1p5-msft">origin/v1p5-msft</a>
+                        <a target="_blank" href="https://github.com/antmicro/i3c-core/tree/v1p5-msft">v1p5-msft</a>
                     </div>
                     
                     
                     <div class="nav-item">
                         <img src="./assets/commit.svg" alt="Run on"/>
-                        <a target="_blank" href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/commit/81967958">81967958</a>
+                        <a target="_blank" href="https://github.com/antmicro/i3c-core/commit/941f083e">941f083e</a>
                     </div>
                     
                 </div>
@@ -75,22 +75,22 @@
 <h3> Test Results
  </h3><table>
 <thead>
-<tr><th style="text-align: center;"> Name </th><th>Tests                                                                                                                                                                </th><th style="text-align: center;"> Max Job Runtime </th><th style="text-align: center;"> Simulated Time </th><th style="text-align: center;"> Passing </th><th style="text-align: center;"> Total </th><th style="text-align: center;">               Pass Rate                </th></tr>
+<tr><th style="text-align: center;"> Name </th><th>Tests                                                                                                                                             </th><th style="text-align: center;"> Max Job Runtime </th><th style="text-align: center;"> Simulated Time </th><th style="text-align: center;"> Passing </th><th style="text-align: center;"> Total </th><th style="text-align: center;">               Pass Rate                </th></tr>
 </thead>
 <tbody>
 <tr><td style="text-align: center;">   <span title='Perform read bus access to the empty RX descriptor queue,
-verify that response comes back and it holds value of 0.'>Reading from empty RX descriptor FIFO<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bus_stall.py#L42>empty_rx_desc_read</a>      </td><td style="text-align: center;">      3.711      </td><td style="text-align: center;">    9327.32     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+verify that response comes back and it holds value of 0.'>Reading from empty RX descriptor FIFO<span>    </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bus_stall.py#L42>empty_rx_desc_read</a>      </td><td style="text-align: center;">      2.811      </td><td style="text-align: center;">    9327.32     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 <tr><td style="text-align: center;">   <span title='Perform read bus access to the empty RX descriptor queue,
-verify that response comes back and it holds value of 0.'>Reading from empty RX data FIFO<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bus_stall.py#L50>empty_rx_data_read</a>      </td><td style="text-align: center;">      3.59       </td><td style="text-align: center;">    9327.32     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+verify that response comes back and it holds value of 0.'>Reading from empty RX data FIFO<span>    </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bus_stall.py#L50>empty_rx_data_read</a>      </td><td style="text-align: center;">      2.542      </td><td style="text-align: center;">    9327.32     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 <tr><td style="text-align: center;">   <span title='Perform read bus access to the empty RX descriptor queue,
-verify that response comes back and it holds value of 0.'>Reading from empty indirect FIFO<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bus_stall.py#L58>empty_indirect_fifo_read</a></td><td style="text-align: center;">      3.59       </td><td style="text-align: center;">    9327.32     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+verify that response comes back and it holds value of 0.'>Reading from empty indirect FIFO<span>    </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bus_stall.py#L58>empty_indirect_fifo_read</a></td><td style="text-align: center;">      2.585      </td><td style="text-align: center;">    9327.32     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 <tr><td style="text-align: center;">   <span title='Perform multiple write bus accesses to the TX descriptor queue,
-verify that all transactions has finished.'>Writing to full TX descriptor FIFO<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bus_stall.py#L65>full_tx_desc_write</a>      </td><td style="text-align: center;">      4.58       </td><td style="text-align: center;">    12812.3     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+verify that all transactions has finished.'>Writing to full TX descriptor FIFO<span>    </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bus_stall.py#L65>full_tx_desc_write</a>      </td><td style="text-align: center;">      3.247      </td><td style="text-align: center;">    12812.3     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 <tr><td style="text-align: center;">   <span title='Perform multiple write bus accesses to the TX data queue,
-verify that all transactions has finished.'>Writing to full TX data FIFO<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bus_stall.py#L77>full_tx_data_write</a>      </td><td style="text-align: center;">      4.561      </td><td style="text-align: center;">    12824.3     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+verify that all transactions has finished.'>Writing to full TX data FIFO<span>    </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bus_stall.py#L77>full_tx_data_write</a>      </td><td style="text-align: center;">      3.296      </td><td style="text-align: center;">    12824.3     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 <tr><td style="text-align: center;">   <span title='Perform multiple write bus accesses to the IBI queue,
-verify that all transactions has finished.'>Writing to full IBI FIFO<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bus_stall.py#L89>full_ibi_write</a>          </td><td style="text-align: center;">      4.515      </td><td style="text-align: center;">    12812.3     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">      </td><td><b>TOTAL</b>                                                                                                                                                         </td><td style="text-align: center;">                 </td><td style="text-align: center;">                </td><td style="text-align: center;">   18    </td><td style="text-align: center;">  18   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+verify that all transactions has finished.'>Writing to full IBI FIFO<span>    </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bus_stall.py#L89>full_ibi_write</a>          </td><td style="text-align: center;">      3.28       </td><td style="text-align: center;">    12812.3     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">      </td><td><b>TOTAL</b>                                                                                                                                      </td><td style="text-align: center;">                 </td><td style="text-align: center;">                </td><td style="text-align: center;">   12    </td><td style="text-align: center;">  12   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 </tbody>
 </table>
 
@@ -105,7 +105,7 @@ verify that all transactions has finished.'>Writing to full IBI FIFO<span>    </
 <tr><th style="text-align: center;"> Implemented tests </th><th style="text-align: center;"> Planned tests </th><th style="text-align: center;">        Implementation progress         </th><th style="text-align: center;"> Passing runs </th><th style="text-align: center;"> Total runs </th><th style="text-align: center;">               Pass rate                </th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align: center;">         6         </td><td style="text-align: center;">       6       </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td><td style="text-align: center;">      18      </td><td style="text-align: center;">     18     </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">         6         </td><td style="text-align: center;">       6       </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td><td style="text-align: center;">      12      </td><td style="text-align: center;">     12     </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 </tbody>
 </table>
 

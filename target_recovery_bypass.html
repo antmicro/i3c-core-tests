@@ -29,7 +29,7 @@
 
                     
                     <div class="nav-urls">
-                        <a href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/testplan/top/target_recovery_bypass.hjson" class="button tooltip">
+                        <a href="https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/testplan/top/target_recovery_bypass.hjson" class="button tooltip">
                             <img src="assets/code.svg" alt="Source" style="transform: scale(1.25) translatey(1px);"/>
                             <span class="tooltip-text tooltip-text-right">Go to testplan source</span>
                         </a>
@@ -42,25 +42,25 @@
                     
                     <div class="nav-item">
                         <img src="./assets/date.svg" alt="Run on"/>
-                        28/04/2026 08:50
+                        30/04/2026 16:22
                     </div>
                     
                     
                     <div class="nav-item">
                         <img src="./assets/repo.svg" alt="Run on"/>
-                        <a target="_blank" href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy">ci</a>
+                        <a target="_blank" href="https://github.com/antmicro/i3c-core">microsoft-i3c-core-rtl</a>
                     </div>
                     
                     
                     <div class="nav-item">
                         <img src="./assets/branch.svg" alt="Run on"/>
-                        <a target="_blank" href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/tree/origin/v1p5-msft">origin/v1p5-msft</a>
+                        <a target="_blank" href="https://github.com/antmicro/i3c-core/tree/v1p5-msft">v1p5-msft</a>
                     </div>
                     
                     
                     <div class="nav-item">
                         <img src="./assets/commit.svg" alt="Run on"/>
-                        <a target="_blank" href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/commit/81967958">81967958</a>
+                        <a target="_blank" href="https://github.com/antmicro/i3c-core/commit/941f083e">941f083e</a>
                     </div>
                     
                 </div>
@@ -75,13 +75,13 @@
 <h3> Test Results
  </h3><table>
 <thead>
-<tr><th style="text-align: center;">                                                       Name                                                       </th><th>Tests                                                                                                                                                                       </th><th style="text-align: center;"> Max Job Runtime </th><th style="text-align: center;"> Simulated Time </th><th style="text-align: center;"> Passing </th><th style="text-align: center;"> Total </th><th style="text-align: center;">               Pass Rate                </th></tr>
+<tr><th style="text-align: center;">                                                       Name                                                       </th><th>Tests                                                                                                                                                    </th><th style="text-align: center;"> Max Job Runtime </th><th style="text-align: center;"> Simulated Time </th><th style="text-align: center;"> Passing </th><th style="text-align: center;"> Total </th><th style="text-align: center;">               Pass Rate                </th></tr>
 </thead>
 <tbody>
 <tr><td style="text-align: center;">                                                         <span title='Verify basic bypass functionality
 - Enable I3C Core bypass in the Recovery Handler via CSR
 - Write to the TTI TX Data Queue and read from the Indirect FIFO Queue
-- Compare the data and verify it hasn't changed'>simple_write_read<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L93>indirect_fifo_write</a>               </td><td style="text-align: center;">      3.946      </td><td style="text-align: center;">    14640.3     </td><td style="text-align: center;">    6    </td><td style="text-align: center;">   6   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+- Compare the data and verify it hasn't changed'>simple_write_read<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bypass.py#L93>indirect_fifo_write</a>               </td><td style="text-align: center;">      0.852      </td><td style="text-align: center;">      1614      </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 <tr><td style="text-align: center;">                                                         <span title='Verify accessibility of CSRs as specified in the OCP Secure Firmware Recovery
 specification with additional bypass features
 - Write to all RW and read from all RO Secure Firmware Recovery Registers
@@ -89,29 +89,29 @@ specification with additional bypass features
 - Ensure the reserved fields of tested registers were not written
 - Ensure RW registers can be written and read back
 - Ensure RO registers cannot be written
-- Perform checks with bypass disabled and enabled'>check_csr_access<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L1035>ocp_csr_access_bypass_enabled</a>   </td><td style="text-align: center;">      0.245      </td><td style="text-align: center;">    486.001     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">                                                                                                                  </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L1040>ocp_csr_access_bypass_disabled</a>  </td><td style="text-align: center;">      5.882      </td><td style="text-align: center;">     14510      </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+- Perform checks with bypass disabled and enabled'>check_csr_access<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bypass.py#L1035>ocp_csr_access_bypass_enabled</a>   </td><td style="text-align: center;">      0.183      </td><td style="text-align: center;">    486.001     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                                                                                                                  </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bypass.py#L1040>ocp_csr_access_bypass_disabled</a>  </td><td style="text-align: center;">      3.378      </td><td style="text-align: center;">     14510      </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 <tr><td style="text-align: center;">                                                         <span title='Verify recovery status wires as specified in the Caliptra SS Hardware Specification
 - Write to the TTI TX Queue and read from the Indirect FIFO Queue.
 - Ensure correct state of the `payload_available` wire
 - Write to the Recovery Control CSR to activate an image
-- Ensure correct state of the `image_activated` wire'>recovery_status_wires<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L367>payload_available</a>                </td><td style="text-align: center;">     26.629      </td><td style="text-align: center;">     108090     </td><td style="text-align: center;">    6    </td><td style="text-align: center;">   6   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">                                                                                                                  </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L433>image_activated</a>                  </td><td style="text-align: center;">      1.975      </td><td style="text-align: center;">    6858.78     </td><td style="text-align: center;">    6    </td><td style="text-align: center;">   6   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;"> <span title='Verify that access is rejected when the Indirect FIFO Queue overflows'>indirect_fifo_overflow<span> </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L182>indirect_fifo_overflow</a>           </td><td style="text-align: center;">      0.43       </td><td style="text-align: center;">    882.001     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;"><span title='Verify that access is rejected when the Indirect FIFO Queue underflows'>indirect_fifo_underflow<span></td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L209>indirect_fifo_underflow</a>          </td><td style="text-align: center;">      0.051      </td><td style="text-align: center;">    106.001     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+- Ensure correct state of the `image_activated` wire'>recovery_status_wires<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bypass.py#L367>payload_available</a>                </td><td style="text-align: center;">      0.543      </td><td style="text-align: center;">      1544      </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                                                                                                                  </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bypass.py#L433>image_activated</a>                  </td><td style="text-align: center;">      0.048      </td><td style="text-align: center;">    138.001     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;"> <span title='Verify that access is rejected when the Indirect FIFO Queue overflows'>indirect_fifo_overflow<span> </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bypass.py#L182>indirect_fifo_overflow</a>           </td><td style="text-align: center;">      0.321      </td><td style="text-align: center;">    882.001     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;"><span title='Verify that access is rejected when the Indirect FIFO Queue underflows'>indirect_fifo_underflow<span></td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bypass.py#L209>indirect_fifo_underflow</a>          </td><td style="text-align: center;">      0.037      </td><td style="text-align: center;">    106.001     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 <tr><td style="text-align: center;">                                                         <span title='Verify that the Recovery Handler with bypass enabled is not in any way interfered by any
-I3C bus traffic'>i3c_bus_traffic_during_loopback<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L489>i3c_bus_traffic_during_loopback</a>  </td><td style="text-align: center;">      31.67      </td><td style="text-align: center;">    78744.7     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+I3C bus traffic'>i3c_bus_traffic_during_loopback<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bypass.py#L489>i3c_bus_traffic_during_loopback</a>  </td><td style="text-align: center;">     18.057      </td><td style="text-align: center;">    69766.1     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 <tr><td style="text-align: center;">                                                         <span title='Verify that AXI access to Secure Firmware Recovery registers is filtered
 - AXI IDs from the privileged ID list should always grant access to all registers
 - Once ID filtering is disabled, register access should be granted regardless of the
   transaction ID
 - With ID filtering enabled, all transactions with ID outside of the privileged ID list
   should be rejected with SLVERR response and register access request should not be
-  propagated to the CPUIF'>check_axi_filtering<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L841>axi_filtering</a>                    </td><td style="text-align: center;">      1.139      </td><td style="text-align: center;">      2064      </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+  propagated to the CPUIF'>check_axi_filtering<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bypass.py#L841>axi_filtering</a>                    </td><td style="text-align: center;">      0.852      </td><td style="text-align: center;">      2064      </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 <tr><td style="text-align: center;">                                                         <span title='Verify basic read functionality through recovery bypass
 - Enable I3C Core bypass in the Recovery Handler via CSR
 - Read from a recovery CSR via the bypass path
-- Verify data integrity'>bypass_read<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/i2c_standby_controller/test_read.py#L154>read</a>                  </td><td style="text-align: center;">      2.642      </td><td style="text-align: center;">     419533     </td><td style="text-align: center;">   10    </td><td style="text-align: center;">  10   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+- Verify data integrity'>bypass_read<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bypass.py#L233>read</a>                             </td><td style="text-align: center;">      0.107      </td><td style="text-align: center;">    282.001     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 <tr><td style="text-align: center;">                                                         <span title='Verify that Caliptra Subsystem can perform a full Recovery Sequence with the I3C Core with
 the bypass feature enabled. This test will run software on both Caliptra core and Caliptra
 MCU to interact with the I3C Core and Caliptra RoT.
@@ -120,12 +120,12 @@ MCU to interact with the I3C Core and Caliptra RoT.
 - MCU should load the image to the Indirect FIFO Queue which will be read by Caliptra ROM
 - MCU should activate the image
 - Caliptra ROM should write the image to the MCU SRAM
-- The image should be identical with the one read form a simulated QSPI'>cptra_mcu_recovery<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L576>recovery_flow</a>                    </td><td style="text-align: center;">      96.29      </td><td style="text-align: center;">     367277     </td><td style="text-align: center;">    6    </td><td style="text-align: center;">   6   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+- The image should be identical with the one read form a simulated QSPI'>cptra_mcu_recovery<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_bypass.py#L576>recovery_flow</a>                    </td><td style="text-align: center;">      2.214      </td><td style="text-align: center;">      6291      </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 <tr><td style="text-align: center;">                                                         <span title='Boot the core in bypass mode and perform AXI recovery flow. During AXI recovery
 send random I3C traffic and assert all I3C packets are ACKed.
 Switch to I3C mode and send regular I3C traffic, make sure it is handled correctly.
-The test should cover corner cases where the switch happens in the middle of an I3C transaction.'>bypass_to_i3c_switch<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_i3c_target.py#L1561>bypass_to_normal_mode_switch</a></td><td style="text-align: center;">     10.947      </td><td style="text-align: center;">    38638.2     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">                                                                                                                  </td><td><b>TOTAL</b>                                                                                                                                                                </td><td style="text-align: center;">                 </td><td style="text-align: center;">                </td><td style="text-align: center;">   55    </td><td style="text-align: center;">  55   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+The test should cover corner cases where the switch happens in the middle of an I3C transaction.'>bypass_to_i3c_switch<span>                                                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_i3c_target.py#L1623>bypass_to_normal_mode_switch</a></td><td style="text-align: center;">     10.499      </td><td style="text-align: center;">    39622.6     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                                                                                                                  </td><td><b>TOTAL</b>                                                                                                                                             </td><td style="text-align: center;">                 </td><td style="text-align: center;">                </td><td style="text-align: center;">   24    </td><td style="text-align: center;">  24   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 </tbody>
 </table>
 
@@ -140,7 +140,7 @@ The test should cover corner cases where the switch happens in the middle of an 
 <tr><th style="text-align: center;"> Implemented tests </th><th style="text-align: center;"> Planned tests </th><th style="text-align: center;">        Implementation progress         </th><th style="text-align: center;"> Passing runs </th><th style="text-align: center;"> Total runs </th><th style="text-align: center;">               Pass rate                </th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align: center;">        12         </td><td style="text-align: center;">      12       </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td><td style="text-align: center;">      55      </td><td style="text-align: center;">     55     </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">        12         </td><td style="text-align: center;">      12       </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td><td style="text-align: center;">      24      </td><td style="text-align: center;">     24     </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 </tbody>
 </table>
 

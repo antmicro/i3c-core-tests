@@ -29,7 +29,7 @@
 
                     
                     <div class="nav-urls">
-                        <a href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/testplan/top/target_recovery.hjson" class="button tooltip">
+                        <a href="https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/testplan/top/target_recovery.hjson" class="button tooltip">
                             <img src="assets/code.svg" alt="Source" style="transform: scale(1.25) translatey(1px);"/>
                             <span class="tooltip-text tooltip-text-right">Go to testplan source</span>
                         </a>
@@ -42,25 +42,25 @@
                     
                     <div class="nav-item">
                         <img src="./assets/date.svg" alt="Run on"/>
-                        28/04/2026 08:50
+                        30/04/2026 16:22
                     </div>
                     
                     
                     <div class="nav-item">
                         <img src="./assets/repo.svg" alt="Run on"/>
-                        <a target="_blank" href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy">ci</a>
+                        <a target="_blank" href="https://github.com/antmicro/i3c-core">microsoft-i3c-core-rtl</a>
                     </div>
                     
                     
                     <div class="nav-item">
                         <img src="./assets/branch.svg" alt="Run on"/>
-                        <a target="_blank" href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/tree/origin/v1p5-msft">origin/v1p5-msft</a>
+                        <a target="_blank" href="https://github.com/antmicro/i3c-core/tree/v1p5-msft">v1p5-msft</a>
                     </div>
                     
                     
                     <div class="nav-item">
                         <img src="./assets/commit.svg" alt="Run on"/>
-                        <a target="_blank" href="https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/commit/81967958">81967958</a>
+                        <a target="_blank" href="https://github.com/antmicro/i3c-core/commit/941f083e">941f083e</a>
                     </div>
                     
                 </div>
@@ -75,10 +75,10 @@
 <h3> Test Results
  </h3><table>
 <thead>
-<tr><th style="text-align: center;"> Name </th><th>Tests                                                                                                                                                                              </th><th style="text-align: center;"> Max Job Runtime </th><th style="text-align: center;"> Simulated Time </th><th style="text-align: center;"> Passing </th><th style="text-align: center;"> Total </th><th style="text-align: center;">               Pass Rate                </th></tr>
+<tr><th style="text-align: center;">                       Name                       </th><th>Tests                                                                                                                                                           </th><th style="text-align: center;"> Max Job Runtime </th><th style="text-align: center;"> Simulated Time </th><th style="text-align: center;"> Passing </th><th style="text-align: center;"> Total </th><th style="text-align: center;">               Pass Rate                </th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align: center;">   <span title='Tests CSR write(s) through recovery protocol using the virtual
+<tr><td style="text-align: center;">                         <span title='Tests CSR write(s) through recovery protocol using the virtual
 target address. In the beginning sets the TTI and recovery
 addresses via two SETDASA CCCs.
 
@@ -98,16 +98,16 @@ reads content of the register via AHB/AXI and verifies that their
 content matches.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>virtual_write<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L411>virtual_write</a>                         </td><td style="text-align: center;">      8.703      </td><td style="text-align: center;">    34861.8     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Tests CSR write(s) with lengths over CSR size to the virtual
+The I3C bus clock is set to 12.5 MHz.'>virtual_write<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L411>virtual_write</a>                         </td><td style="text-align: center;">      5.174      </td><td style="text-align: center;">    34861.8     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Tests CSR write(s) with lengths over CSR size to the virtual
 address using recovery protocol.
 
 Performs a write to on of DEVICE_RESET/RECOVERY_CTRL/INDIRECT_FIFO_CTRL
 registers via the recovery protocol targeting the virtual address.
 Reads the CSR content back through AHB/AXI. Then reads again
 the selected register, this time via the recovery protocol.
-Check if the content matches value stored in the register.'>virtual_overwrite<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L308>virtual_overwrite</a>                     </td><td style="text-align: center;">     39.156      </td><td style="text-align: center;">     166314     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
+Check if the content matches value stored in the register.'>virtual_overwrite<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L308>virtual_overwrite</a>                     </td><td style="text-align: center;">     25.765      </td><td style="text-align: center;">     200922     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
 
 Writes to DEVICE_RESET via recovery protocol targeting the virtual
 device address. Reads the register content through AHB/AXI and
@@ -121,8 +121,8 @@ and repeats the previous steps to test whether the I3C core
 responds both to TTI and virtual addresses.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>virtual_write_alternating<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1416>virtual_write_alternating</a>            </td><td style="text-align: center;">      7.853      </td><td style="text-align: center;">    28501.5     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
+The I3C bus clock is set to 12.5 MHz.'>virtual_write_alternating<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1416>virtual_write_alternating</a>            </td><td style="text-align: center;">      4.878      </td><td style="text-align: center;">    28501.5     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
 
 Writes to DEVICE_RESET via recovery protocol targeting the virtual
 device address. Reads the register content through AHB/AXI and
@@ -132,8 +132,8 @@ Writes to INDIRECT_FIFO_CTRL via recovery protocol targeting the virtual
 device address. Reads the register content via recovery protocol targeting
 the virtual device address and check if it matches with what has been written.
 Reads the register content through AHB/AXI and check if it matches with
-what has been written.'>read_fifo_ctrl<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1556>read_fifo_ctrl</a>                       </td><td style="text-align: center;">      8.059      </td><td style="text-align: center;">    32972.9     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
+what has been written.'>read_fifo_ctrl<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1556>read_fifo_ctrl</a>                       </td><td style="text-align: center;">      4.804      </td><td style="text-align: center;">    32972.9     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
 
 Performs a write to DEVICE_RESET register via the recovery
 protocol targeting the virtual address. Reads the CSR content
@@ -147,8 +147,8 @@ reads content of the register via AHB/AXI and verifies that their
 content matches.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>write<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1484>write</a>                                </td><td style="text-align: center;">      5.928      </td><td style="text-align: center;">    22534.5     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
+The I3C bus clock is set to 12.5 MHz.'>write<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1484>write</a>                                </td><td style="text-align: center;">      3.703      </td><td style="text-align: center;">    22534.5     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
 
 Retrieves indirect FIFO status and pointers by reading
 INDIRECT_FIFO_STATUS CSR over AHB/AXI bus. Writes data to the
@@ -162,8 +162,8 @@ After each FIFO status and pointer retrieval checks if both
 match the expected behavior.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>indirect_fifo_write<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L93>indirect_fifo_write</a>                      </td><td style="text-align: center;">      3.946      </td><td style="text-align: center;">    14640.3     </td><td style="text-align: center;">    6    </td><td style="text-align: center;">   6   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
+The I3C bus clock is set to 12.5 MHz.'>indirect_fifo_write<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1656>indirect_fifo_write</a>                  </td><td style="text-align: center;">      4.238      </td><td style="text-align: center;">    27666.6     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
 
 Writes some data to DEVICE_RESET register using the recovery
 interface. Then, repeats the write with different data but
@@ -173,8 +173,8 @@ and ensures that it matches with what was written in the first
 transfer. The test shall use random data length and value.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>write_pec<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1763>write_pec</a>                            </td><td style="text-align: center;">      5.342      </td><td style="text-align: center;">    20336.3     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
+The I3C bus clock is set to 12.5 MHz.'>write_pec<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1763>write_pec</a>                            </td><td style="text-align: center;">      3.365      </td><td style="text-align: center;">    20336.3     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
 
 Writes random data to the PROT_CAP recovery CSR via AHB/AXI.
 Disables the recovery mode, writes some data to TTI TX queues
@@ -183,8 +183,8 @@ the recovery protocol. Checks if the content matches what was
 written in the beginning of the test.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>read<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/block/i2c_standby_controller/test_read.py#L154>read</a>                         </td><td style="text-align: center;">      2.642      </td><td style="text-align: center;">     419533     </td><td style="text-align: center;">   10    </td><td style="text-align: center;">  10   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
+The I3C bus clock is set to 12.5 MHz.'>read<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1817>read</a>                                 </td><td style="text-align: center;">      3.909      </td><td style="text-align: center;">    23829.6     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
 
 Writes random data to the PROT_CAP recovery CSR via AHB/AXI.
 Disables the recovery mode, writes some data to TTI TX queues
@@ -195,8 +195,8 @@ Checks if the content read back matches what was written in the
 beginning of the test.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>read_short<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1907>read_short</a>                           </td><td style="text-align: center;">      7.044      </td><td style="text-align: center;">    28556.8     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
+The I3C bus clock is set to 12.5 MHz.'>read_short<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1907>read_short</a>                           </td><td style="text-align: center;">      4.318      </td><td style="text-align: center;">    28556.8     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
 
 Writes random data to the PROT_CAP recovery CSR via AHB/AXI.
 Disables the recovery mode, writes some data to TTI TX queues
@@ -207,8 +207,8 @@ Checks if the content read back matches what was written in the
 beginning of the test.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>read_long<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1974>read_long</a>                            </td><td style="text-align: center;">     13.166      </td><td style="text-align: center;">    56826.9     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the TTI and recovery addresses via two SETDASA CCCs. Disables
+The I3C bus clock is set to 12.5 MHz.'>read_long<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1974>read_long</a>                            </td><td style="text-align: center;">      7.902      </td><td style="text-align: center;">    56826.9     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the TTI and recovery addresses via two SETDASA CCCs. Disables
 the recovery mode.
 
 Issues a series of recovery read commands to all CSRs mentioned in the
@@ -221,8 +221,8 @@ mode is off) are always accessible, checks if other CSRs are accessible
 only in the recovery mode.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>virtual_read<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2100>virtual_read</a>                         </td><td style="text-align: center;">     55.978      </td><td style="text-align: center;">     274964     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Alternates between recovery mode reads and TTI reads. Initially
+The I3C bus clock is set to 12.5 MHz.'>virtual_read<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2100>virtual_read</a>                         </td><td style="text-align: center;">     31.822      </td><td style="text-align: center;">     274964     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Alternates between recovery mode reads and TTI reads. Initially
 sets the TTI and recovery addresses via two SETDASA CCCs.
 
 Writes random data to the PROT_CAP register over AHB/AXI, reads
@@ -237,8 +237,8 @@ to ensure that both TTI and recovery transfers are possible
 regardless of the recovery mode setting.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>virtual_read_alternating<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2187>virtual_read_alternating</a>             </td><td style="text-align: center;">     11.578      </td><td style="text-align: center;">    48561.5     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
+The I3C bus clock is set to 12.5 MHz.'>virtual_read_alternating<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2187>virtual_read_alternating</a>             </td><td style="text-align: center;">      7.051      </td><td style="text-align: center;">    48561.5     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
 
 Ensures that initially the recovery_payload_available_o signal
 is deasserted. Then writes data to the indirect FIFO via the
@@ -248,8 +248,8 @@ Reads from INDIRECT_FIFO_DATA CSR over AHB/AXI and checks if the
 read causes the signal to be deasserted again.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>payload_available<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L367>payload_available</a>                       </td><td style="text-align: center;">     26.629      </td><td style="text-align: center;">     108090     </td><td style="text-align: center;">    6    </td><td style="text-align: center;">   6   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
+The I3C bus clock is set to 12.5 MHz.'>payload_available<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2270>payload_available</a>                    </td><td style="text-align: center;">     32.028      </td><td style="text-align: center;">     214728     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
 
 Ensures that initially the image_activated_o signal is deasserted.
 Writes 0xF to the 3rd byte of the RECOVERY_CTRL register using the
@@ -258,15 +258,15 @@ recovery interface. Checks if the signal gets asserted. Then writes
 gets deasserted.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>image_activated<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L433>image_activated</a>                         </td><td style="text-align: center;">      1.975      </td><td style="text-align: center;">    6858.78     </td><td style="text-align: center;">    6    </td><td style="text-align: center;">   6   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the recovery address via SETDASA CCC.
+The I3C bus clock is set to 12.5 MHz.'>image_activated<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2383>image_activated</a>                      </td><td style="text-align: center;">      2.434      </td><td style="text-align: center;">    13579.6     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the recovery address via SETDASA CCC.
 
 Writes data to indirect FIFO and waits for the values to propagate
 through the core.
 
 Resets indirect FIFO and writes new data to the indirect FIFO.
-Reads indirect FIFO and compares received data with one written after reset.'>indirect_fifo_reset_access<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2429>indirect_fifo_reset_access</a>           </td><td style="text-align: center;">      8.353      </td><td style="text-align: center;">    36985.9     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='The test exercises firmware image transfer flow using the recovery
+Reads indirect FIFO and compares received data with one written after reset.'>indirect_fifo_reset_access<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2429>indirect_fifo_reset_access</a>           </td><td style="text-align: center;">      8.657      </td><td style="text-align: center;">    58448.9     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='The test exercises firmware image transfer flow using the recovery
 protocol. It consists of two agents running concurrently.
 
 The AHB/AXI agent is responsible for recovery operation from the
@@ -277,132 +277,138 @@ The BFM agent issues I3C transactions and is responsible for pushing
 a firmware image to the target.
 
 The test runs at core clock of 100 and 200 MHz. The slowest clock that does not result in a tSCO violation is 166 MHz.
-The I3C bus clock is set to 12.5 MHz.'>recovery_flow<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_bypass.py#L576>recovery_flow</a>                           </td><td style="text-align: center;">      96.29      </td><td style="text-align: center;">     367277     </td><td style="text-align: center;">    6    </td><td style="text-align: center;">   6   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
+The I3C bus clock is set to 12.5 MHz.'>recovery_flow<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2485>recovery_flow</a>                        </td><td style="text-align: center;">     117.656     </td><td style="text-align: center;">     728252     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Sets the TTI and recovery addresses via two SETDASA CCCs.
 
 Writes to DEVICE_RESET via recovery protocol targeting the virtual
 device address. Reads the register content through AHB/AXI and
 check if it matches with what has been written.
 
 Writes to all remaining recovery CSRs using AHB/AXI, reads back
-their values and compares them.'>ocp_csr_access<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2711>ocp_csr_access</a>                       </td><td style="text-align: center;">      5.389      </td><td style="text-align: center;">    14180.2     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Tests Recovery Interface error detection, interrupt status, and counters.
+their values and compares them.'>ocp_csr_access<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2711>ocp_csr_access</a>                       </td><td style="text-align: center;">      3.592      </td><td style="text-align: center;">    14180.2     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Tests Recovery Interface error detection, interrupt status, and counters.
 Validates RI_PEC_ERR (PEC/CRC error detection), RI_PROT_ERR (protocol
-error detection), and associated interrupt and counter behavior.'>ri_error_detection<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L113>ri_error_detection</a>                    </td><td style="text-align: center;">      5.527      </td><td style="text-align: center;">    17438.4     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Comprehensive Recovery Interface stress test covering PEC errors,
-T-bit parity errors, and protocol edge cases in rapid succession.'>ri_comprehensive_stress<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2772>ri_comprehensive_stress</a>              </td><td style="text-align: center;">     226.448     </td><td style="text-align: center;">  1.02507e+06   </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Tests Recovery Interface resilience to various I3C framing errors and
+error detection), and associated interrupt and counter behavior.'>ri_error_detection<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L113>ri_error_detection</a>                    </td><td style="text-align: center;">      3.709      </td><td style="text-align: center;">    17438.4     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Comprehensive Recovery Interface stress test covering PEC errors,
+T-bit parity errors, and protocol edge cases in rapid succession.'>ri_comprehensive_stress<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L2772>ri_comprehensive_stress</a>              </td><td style="text-align: center;">     132.274     </td><td style="text-align: center;">  1.02507e+06   </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Tests Recovery Interface resilience to various I3C framing errors and
 abnormal conditions including controller-side protocol violations and
-unexpected bus events.'>ri_error_injection_stress<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L947>ri_error_injection_stress</a>             </td><td style="text-align: center;">      79.92      </td><td style="text-align: center;">     386315     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Tests that writing to INDIRECT_FIFO_DATA with RI length field 1 byte
-larger than actual data sent results in a length underrun error.'>ri_length_underrun<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L4690>ri_length_underrun</a>                   </td><td style="text-align: center;">      8.857      </td><td style="text-align: center;">    34376.6     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Tests that issuing STOP mid-byte during different phases of the RI
+unexpected bus events.'>ri_error_injection_stress<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L947>ri_error_injection_stress</a>             </td><td style="text-align: center;">     45.936      </td><td style="text-align: center;">     386315     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Tests that writing to INDIRECT_FIFO_DATA with RI length field 1 byte
+larger than actual data sent results in a length underrun error.'>ri_length_underrun<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L4690>ri_length_underrun</a>                   </td><td style="text-align: center;">      5.377      </td><td style="text-align: center;">    34376.6     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Tests that issuing STOP mid-byte during different phases of the RI
 protocol is handled correctly. The device should detect the error
-and recover gracefully.'>ri_mid_byte_stop<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L4859>ri_mid_byte_stop</a>                     </td><td style="text-align: center;">     24.448      </td><td style="text-align: center;">     111210     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Tests RI protocol error handling when the READ command's read phase is
+and recover gracefully.'>ri_mid_byte_stop<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L4859>ri_mid_byte_stop</a>                     </td><td style="text-align: center;">     14.574      </td><td style="text-align: center;">     111556     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Tests RI protocol error handling when the READ command's read phase is
 interrupted by various bus conditions instead of the expected
-Sr + Addr+R sequence.'>ri_read_interrupted_by_ccc<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L5045>ri_read_interrupted_by_ccc</a>           </td><td style="text-align: center;">     56.823      </td><td style="text-align: center;">     115833     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Tests chaining of Recovery Interface commands, CCCs, and private writes
+Sr + Addr+R sequence.'>ri_read_interrupted_by_ccc<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L5045>ri_read_interrupted_by_ccc</a>           </td><td style="text-align: center;">      39.94      </td><td style="text-align: center;">     115833     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Tests chaining of Recovery Interface commands, CCCs, and private writes
 within sequences using Sr. All RI/private transfers use Sr, only CCCs
-use broadcast address. Verifies correct interleaving.'>chained_ri_and_ccc_commands<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L522>chained_ri_and_ccc_commands</a>           </td><td style="text-align: center;">     69.519      </td><td style="text-align: center;">     312456     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Tests writing more than 256 bytes to the INDIRECT_FIFO via I3C
+use broadcast address. Verifies correct interleaving.'>chained_ri_and_ccc_commands<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L522>chained_ri_and_ccc_commands</a>           </td><td style="text-align: center;">     40.984      </td><td style="text-align: center;">     312456     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Tests writing more than 256 bytes to the INDIRECT_FIFO via I3C
 interface. The INDIRECT_FIFO has a fixed size (typically 256 bytes).
-Verifies correct handling of writes that exceed capacity.'>indirect_fifo_large_write<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L3613>indirect_fifo_large_write</a>            </td><td style="text-align: center;">      54.13      </td><td style="text-align: center;">     244463     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Tests two consecutive writes to the INDIRECT_FIFO that together exceed
+Verifies correct handling of writes that exceed capacity.'>indirect_fifo_large_write<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L3613>indirect_fifo_large_write</a>            </td><td style="text-align: center;">     31.984      </td><td style="text-align: center;">     244463     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Tests two consecutive writes to the INDIRECT_FIFO that together exceed
 capacity. First write fits, second write overflows. Verifies correct
-handling of the overflow condition.'>indirect_fifo_two_writes_overflow<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L3823>indirect_fifo_two_writes_overflow</a>    </td><td style="text-align: center;">     67.639      </td><td style="text-align: center;">     302265     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Tests that T-bit (parity) errors during INDIRECT_FIFO_DATA write are
+handling of the overflow condition.'>indirect_fifo_two_writes_overflow<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L3823>indirect_fifo_two_writes_overflow</a>    </td><td style="text-align: center;">     40.127      </td><td style="text-align: center;">     302265     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Tests that T-bit (parity) errors during INDIRECT_FIFO_DATA write are
 handled correctly. Verifies parity errors on specific bytes are
-detected and reported.'>indirect_fifo_parity_error<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L4148>indirect_fifo_parity_error</a>           </td><td style="text-align: center;">     16.403      </td><td style="text-align: center;">    72923.1     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Tests that WRITE_INDEX does not increment when writing to a full
+detected and reported.'>indirect_fifo_parity_error<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L4148>indirect_fifo_parity_error</a>           </td><td style="text-align: center;">       9.9       </td><td style="text-align: center;">    72923.1     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Tests that WRITE_INDEX does not increment when writing to a full
 INDIRECT_FIFO. Fills the hardware FIFO completely and verifies
-the pointer behavior on overflow.'>indirect_fifo_overflow_pointer<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1278>indirect_fifo_overflow_pointer</a>       </td><td style="text-align: center;">     65.966      </td><td style="text-align: center;">     293405     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Tests behavior when writing more data than the register size allows.
+the pointer behavior on overflow.'>indirect_fifo_overflow_pointer<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L1278>indirect_fifo_overflow_pointer</a>       </td><td style="text-align: center;">     38.745      </td><td style="text-align: center;">     293405     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Tests behavior when writing more data than the register size allows.
 Attempts to write excess bytes to a recovery CSR and verifies
-correct handling.'>write_exceeds_register_size<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L4447>write_exceeds_register_size</a>          </td><td style="text-align: center;">     10.335      </td><td style="text-align: center;">    44793.7     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Verifies that a recovery interface PROT_CAP read and a standard private
+correct handling.'>write_exceeds_register_size<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L4447>write_exceeds_register_size</a>          </td><td style="text-align: center;">      6.191      </td><td style="text-align: center;">    44793.7     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Verifies that a recovery interface PROT_CAP read and a standard private
 read from the TTI TX FIFO work correctly and do not interfere with
-each other.'>private_read_and_ri_read<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L5586>private_read_and_ri_read</a>             </td><td style="text-align: center;">      9.409      </td><td style="text-align: center;">    35346.7     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Verifies that parity/PEC errors on RI writes do not leak into the TTI
+each other.'>private_read_and_ri_read<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L5586>private_read_and_ri_read</a>             </td><td style="text-align: center;">      5.508      </td><td style="text-align: center;">    33669.5     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Verifies that parity/PEC errors on RI writes do not leak into the TTI
 interrupt path, and that T-bit errors on normal target writes do
-produce the expected TTI interrupts.'>parity_error_isolation<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L5713>parity_error_isolation</a>               </td><td style="text-align: center;">     11.074      </td><td style="text-align: center;">    42969.9     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: recovery_handler readonly_err=1, unsupported_err=0.
+produce the expected TTI interrupts.'>parity_error_isolation<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L5713>parity_error_isolation</a>               </td><td style="text-align: center;">      6.712      </td><td style="text-align: center;">    42969.9     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: recovery_handler readonly_err=1, unsupported_err=0.
 Sends WRITE commands to read-only registers (PROT_CAP, DEVICE_ID,
 DEVICE_STATUS, HW_STATUS) and verifies PROT_ERROR=READONLY.
-Also tests readonly_err_det_en toggle for suppression.'>recovery_readonly_write_error<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L5909>recovery_readonly_write_error</a>        </td><td style="text-align: center;">     19.172      </td><td style="text-align: center;">    82889.7     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: RxLenH parity error on write-phase PEC.
+Also tests readonly_err_det_en toggle for suppression.'>recovery_readonly_write_error<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L5909>recovery_readonly_write_error</a>        </td><td style="text-align: center;">     11.508      </td><td style="text-align: center;">    82889.7     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: RxLenH parity error on write-phase PEC.
 Sends a recovery READ command with a T-bit parity error on the PEC byte
 of the write phase. Recovery receiver detects error in RxLenH and
-transitions to Error.'>recovery_read_write_phase_parity<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6080>recovery_read_write_phase_parity</a>     </td><td style="text-align: center;">      7.399      </td><td style="text-align: center;">    28751.8     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: RxPec parity error on descriptor.
+transitions to Error.'>recovery_read_write_phase_parity<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6080>recovery_read_write_phase_parity</a>     </td><td style="text-align: center;">      4.599      </td><td style="text-align: center;">    28751.8     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: RxPec parity error on descriptor.
 Sends a recovery WRITE command where the PEC byte has a T-bit parity
-error. Verifies the error is detected in RxPec state.'>recovery_write_pec_tbit_error<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6209>recovery_write_pec_tbit_error</a>        </td><td style="text-align: center;">     10.149      </td><td style="text-align: center;">    41135.6     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: Toggle all *_det_en_i signals.
+error. Verifies the error is detected in RxPec state.'>recovery_write_pec_tbit_error<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6209>recovery_write_pec_tbit_error</a>        </td><td style="text-align: center;">      6.183      </td><td style="text-align: center;">    41135.6     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Send a recovery WRITE command with more than one PEC bytes with
+length_err_det_en_i enabled and disabled.'>recovery_write_pec_overflow<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6343>recovery_write_pec_overflow</a>          </td><td style="text-align: center;">      5.51       </td><td style="text-align: center;">    35754.6     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: Toggle all *_det_en_i signals.
 For each error detection enable bit in TARGET_ERR_CTRL: disable det_en
 and trigger error (verify not flagged), enable det_en and trigger error
-(verify flagged).'>recovery_all_det_en_toggle<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6343>recovery_all_det_en_toggle</a>           </td><td style="text-align: center;">     17.538      </td><td style="text-align: center;">    72531.8     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: TxLenL/TxLenH bus_rstart_i -> Done.
+(verify flagged).'>recovery_all_det_en_toggle<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6448>recovery_all_det_en_toggle</a>           </td><td style="text-align: center;">     10.699      </td><td style="text-align: center;">    72531.8     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: TxLenL/TxLenH bus_rstart_i -> Done.
 Aborts a recovery READ at different points in the response length
-transmission using command_read_abort.'>recovery_read_abort_at_len<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6485>recovery_read_abort_at_len</a>           </td><td style="text-align: center;">     16.475      </td><td style="text-align: center;">    71163.8     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: Premature stop in RxCmd/RxLenL via bus_rstart_i.
+transmission using command_read_abort.'>recovery_read_abort_at_len<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6590>recovery_read_abort_at_len</a>           </td><td style="text-align: center;">      9.854      </td><td style="text-align: center;">    71163.8     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: Premature stop in RxCmd/RxLenL via bus_rstart_i.
 Sends partial recovery command headers with Sr at unexpected points
-during RxCmd and RxLenL states.'>recovery_premature_sr_in_header<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6575>recovery_premature_sr_in_header</a>      </td><td style="text-align: center;">     14.972      </td><td style="text-align: center;">    63150.4     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: Toggle reg_rst_i, reg_rst_we_o, reg_rst_data_o on all queues.
+during RxCmd and RxLenL states.'>recovery_premature_sr_in_header<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6680>recovery_premature_sr_in_header</a>      </td><td style="text-align: center;">      8.908      </td><td style="text-align: center;">    63150.4     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: Toggle reg_rst_i, reg_rst_we_o, reg_rst_data_o on all queues.
 Exercises all RESET_CONTROL queue reset bits to toggle the reg_rst
-signals on every queue (IBI, RX desc, RX data, TX data).'>recovery_queue_resets<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6708>recovery_queue_resets</a>                </td><td style="text-align: center;">      5.987      </td><td style="text-align: center;">    20862.5     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: in_hdr_mode_i override -> Error.
+signals on every queue (IBI, RX desc, RX data, TX data).'>recovery_queue_resets<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6813>recovery_queue_resets</a>                </td><td style="text-align: center;">      3.76       </td><td style="text-align: center;">    20862.5     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: in_hdr_mode_i override -> Error.
 Triggers TE0 error during an active recovery transaction to force
 in_hdr_mode_i=1 while the recovery FSM is in an active state.
-Recovers via HDR exit.'>recovery_hdr_mode_abort<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6769>recovery_hdr_mode_abort</a>              </td><td style="text-align: center;">     10.264      </td><td style="text-align: center;">     32079      </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: length error detection enable combinations.
+Recovers via HDR exit.'>recovery_hdr_mode_abort<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6874>recovery_hdr_mode_abort</a>              </td><td style="text-align: center;">      6.552      </td><td style="text-align: center;">     32079      </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: length error detection enable combinations.
 Tests length_err_det_en=0 (error suppressed), length_err_det_en=1
-with underrun (error detected), and correct length (no error).'>recovery_length_det_en_toggle<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L6897>recovery_length_det_en_toggle</a>        </td><td style="text-align: center;">      9.583      </td><td style="text-align: center;">    38267.6     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: Toggle threshold input signals on all queues.
+with underrun (error detected), and correct length (no error).'>recovery_length_det_en_toggle<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7002>recovery_length_det_en_toggle</a>        </td><td style="text-align: center;">      5.792      </td><td style="text-align: center;">    38267.6     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: Toggle threshold input signals on all queues.
 Writes non-default values to QUEUE_THLD_CTRL and DATA_BUFFER_THLD_CTRL
-to toggle start_thrld_i and ready_thrld_i on all queues.'>recovery_queue_thresholds<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7021>recovery_queue_thresholds</a>            </td><td style="text-align: center;">      5.885      </td><td style="text-align: center;">    20844.5     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: Premature stop in RxData and RxPec with length underrun.
+to toggle start_thrld_i and ready_thrld_i on all queues.'>recovery_queue_thresholds<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7126>recovery_queue_thresholds</a>            </td><td style="text-align: center;">      3.75       </td><td style="text-align: center;">    20844.5     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: Premature stop in RxData and RxPec with length underrun.
 Sends a recovery WRITE with premature STOP during data or PEC phase,
-verifying correct error handling.'>recovery_write_premature_stop_in_data<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7147>recovery_write_premature_stop_in_data</a></td><td style="text-align: center;">      8.009      </td><td style="text-align: center;">    31448.6     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: Toggle indirect_fifo_overflow_err_det_en_i and
+verifying correct error handling.'>recovery_write_premature_stop_in_data<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7252>recovery_write_premature_stop_in_data</a></td><td style="text-align: center;">      4.845      </td><td style="text-align: center;">    31448.6     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: Premature Sr in TxPec.
+Sends a recovery read with premature Start during PEC phase.'>recovery_read_premature_start_in_pec<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7347>recovery_read_premature_start_in_pec</a> </td><td style="text-align: center;">      5.166      </td><td style="text-align: center;">    36813.9     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: Toggle indirect_fifo_overflow_err_det_en_i and
 rx_fifo_overflow_err_det_en_i.
 Writes more data to INDIRECT_FIFO_DATA than the FIFO can hold to
-trigger overflow, with det_en toggled.'>recovery_indirect_fifo_overflow<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7242>recovery_indirect_fifo_overflow</a>      </td><td style="text-align: center;">     91.148      </td><td style="text-align: center;">     410487     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: Toggle ibi_queue.full_o.
+trigger overflow, with det_en toggled.'>recovery_indirect_fifo_overflow<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7393>recovery_indirect_fifo_overflow</a>      </td><td style="text-align: center;">     53.542      </td><td style="text-align: center;">     410487     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: Toggle ibi_queue.full_o.
 Fills the IBI queue (depth=64) by writing MDB-only IBI descriptors
 without triggering IBI acceptance. Verifies queue fills and device
-remains functional after reset.'>recovery_ibi_queue_full<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7387>recovery_ibi_queue_full</a>              </td><td style="text-align: center;">      5.994      </td><td style="text-align: center;">    20889.5     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: Bypass path to Done in ExecFifoWrite.
+remains functional after reset.'>recovery_ibi_queue_full<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7538>recovery_ibi_queue_full</a>              </td><td style="text-align: center;">      3.896      </td><td style="text-align: center;">    20889.5     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: Bypass path to Done in ExecFifoWrite.
 Enables bypass mode, writes data to INDIRECT_FIFO via recovery
 interface, then asserts REC_PAYLOAD_DONE to trigger the bypass
-exit path from ExecFifoWrite.'>recovery_bypass_fifo_done<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7465>recovery_bypass_fifo_done</a>            </td><td style="text-align: center;">      8.275      </td><td style="text-align: center;">    31279.6     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: in_hdr_mode_i Error from ExecCsrWrite, TxData, TxLenH,
+exit path from ExecFifoWrite.'>recovery_bypass_fifo_done<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7616>recovery_bypass_fifo_done</a>            </td><td style="text-align: center;">      5.22       </td><td style="text-align: center;">    31279.6     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: in_hdr_mode_i Error from ExecCsrWrite, TxData, TxLenH,
 TxLenL, TxPec.
 Uses TE0 injection to force the recovery FSM into Error from specific
-Tx states during READ responses.'>recovery_hdr_abort_per_state<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7583>recovery_hdr_abort_per_state</a>         </td><td style="text-align: center;">     13.439      </td><td style="text-align: center;">    46300.6     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: TxLenL bus_rstart_i -> Done.
+Tx states during READ responses.'>recovery_hdr_abort_per_state<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7734>recovery_hdr_abort_per_state</a>         </td><td style="text-align: center;">      8.462      </td><td style="text-align: center;">    46300.6     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: TxLenL bus_rstart_i -> Done.
 Sends Sr immediately after the read address ACK, before the target
-finishes transmitting the LEN_L byte.'>recovery_read_abort_txlenl<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7796>recovery_read_abort_txlenl</a>           </td><td style="text-align: center;">     29.869      </td><td style="text-align: center;">     129968     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Coverage: Bypass ExecFifoWrite -> Done.
+finishes transmitting the LEN_L byte.'>recovery_read_abort_txlenl<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7947>recovery_read_abort_txlenl</a>           </td><td style="text-align: center;">     17.657      </td><td style="text-align: center;">     129968     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Coverage: Bypass ExecFifoWrite -> Done.
 Enables bypass mode, sends a large INDIRECT_FIFO_DATA write via I3C,
 then races to set REC_PAYLOAD_DONE via CSR before the normal dcnt
-path completes.'>recovery_bypass_fifo_race<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L7898>recovery_bypass_fifo_race</a>            </td><td style="text-align: center;">     11.468      </td><td style="text-align: center;">    48412.6     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Verifies that writing to a read-only recovery register triggers the
-RI_READONLY_ERR interrupt output (irq_o toggle 0->1->0).'>recovery_readonly_write_irq<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L8018>recovery_readonly_write_irq</a>          </td><td style="text-align: center;">      3.512      </td><td style="text-align: center;">    9888.88     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Verifies that sending an unsupported command code triggers the
-RI_UNSUPPORTED_ERR interrupt output (irq_o toggle 0->1->0).'>recovery_unsupported_cmd_irq<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L8106>recovery_unsupported_cmd_irq</a>         </td><td style="text-align: center;">      3.288      </td><td style="text-align: center;">    8450.44     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='PEC coherency under concurrent FW CSR writes. FW toggles
+path completes.'>recovery_bypass_fifo_race<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L8049>recovery_bypass_fifo_race</a>            </td><td style="text-align: center;">      6.861      </td><td style="text-align: center;">    48412.6     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Verifies that writing to a read-only recovery register triggers the
+RI_READONLY_ERR interrupt output (irq_o toggle 0->1->0).'>recovery_readonly_write_irq<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L8169>recovery_readonly_write_irq</a>          </td><td style="text-align: center;">      2.436      </td><td style="text-align: center;">    9888.88     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Verifies that sending an unsupported command code triggers the
+RI_UNSUPPORTED_ERR interrupt output (irq_o toggle 0->1->0).'>recovery_unsupported_cmd_irq<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L8257>recovery_unsupported_cmd_irq</a>         </td><td style="text-align: center;">      2.27       </td><td style="text-align: center;">    8450.44     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='PEC coherency under concurrent FW CSR writes. FW toggles
 RECOVERY_STATUS every few clocks in the background while
 the controller performs reads of the same register via I3C.
 Verifies that PEC is always correct despite concurrent AXI
 writes, proving csr_data snapshot integrity.
-Spec ref: OCP Recovery v1.1 Section 8.4.'>recovery_tx_pec_csr_data_race<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L8412>recovery_tx_pec_csr_data_race</a>        </td><td style="text-align: center;">     58.288      </td><td style="text-align: center;">     196165     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">   <span title='Stress test: concurrent random FW (AXI) and I3C accesses to
+Spec ref: OCP Recovery v1.1 Section 8.4.'>recovery_tx_pec_csr_data_race<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L8563>recovery_tx_pec_csr_data_race</a>        </td><td style="text-align: center;">     42.365      </td><td style="text-align: center;">     196165     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                         <span title='Stress test: concurrent random FW (AXI) and I3C accesses to
 recovery interface CSRs. FW randomly reads/writes RI CSRs via
 AXI in the background while I3C performs random read/write
 operations via the recovery protocol. Every I3C read checks
 PEC, data length, and NACK status. Exposes data races,
-coherency bugs, or FSM hangs under concurrent access.'>recovery_ri_csr_concurrent_stress<span>    </td><td><a href=https://github.com/antmicro/i3c-core/blob/v1p5-msft-testplanner-deploy/verification/cocotb/top/lib_i3c_top/test_recovery.py#L8505>recovery_ri_csr_concurrent_stress</a>    </td><td style="text-align: center;">     196.241     </td><td style="text-align: center;">     687592     </td><td style="text-align: center;">    3    </td><td style="text-align: center;">   3   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
-<tr><td style="text-align: center;">      </td><td><b>TOTAL</b>                                                                                                                                                                       </td><td style="text-align: center;">                 </td><td style="text-align: center;">                </td><td style="text-align: center;">   175   </td><td style="text-align: center;">  175  </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+coherency bugs, or FSM hangs under concurrent access.'>recovery_ri_csr_concurrent_stress<span>                          </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L8656>recovery_ri_csr_concurrent_stress</a>    </td><td style="text-align: center;">     128.998     </td><td style="text-align: center;">     632276     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;"><span title=''>ri_indirect_fifo_overflow_irq<span></td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L8445>ri_indirect_fifo_overflow_irq</a>        </td><td style="text-align: center;">     30.837      </td><td style="text-align: center;">     229528     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">   <span title=''>ri_rx_fifo_overflow_irq<span>   </td><td><a href=https://github.com/antmicro/i3c-core/tree/v1p5-msft/verification/cocotb/top/lib_i3c_top/test_recovery.py#L8342>ri_rx_fifo_overflow_irq</a>              </td><td style="text-align: center;">     29.482      </td><td style="text-align: center;">     224471     </td><td style="text-align: center;">    2    </td><td style="text-align: center;">   2   </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">                                                  </td><td><b>TOTAL</b>                                                                                                                                                    </td><td style="text-align: center;">                 </td><td style="text-align: center;">                </td><td style="text-align: center;">   112   </td><td style="text-align: center;">  112  </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 </tbody>
 </table>
 
@@ -417,7 +423,7 @@ coherency bugs, or FSM hangs under concurrent access.'>recovery_ri_csr_concurren
 <tr><th style="text-align: center;"> Implemented tests </th><th style="text-align: center;"> Planned tests </th><th style="text-align: center;">        Implementation progress         </th><th style="text-align: center;"> Passing runs </th><th style="text-align: center;"> Total runs </th><th style="text-align: center;">               Pass rate                </th></tr>
 </thead>
 <tbody>
-<tr><td style="text-align: center;">        52         </td><td style="text-align: center;">      52       </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td><td style="text-align: center;">     175      </td><td style="text-align: center;">    175     </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
+<tr><td style="text-align: center;">        56         </td><td style="text-align: center;">      56       </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td><td style="text-align: center;">     112      </td><td style="text-align: center;">    112     </td><td style="text-align: center;"><span style="color: #22c55e">100%</span></td></tr>
 </tbody>
 </table>
 
